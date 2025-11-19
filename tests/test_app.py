@@ -2,8 +2,9 @@
 # após a mudança para renderização de templates HTML (de JSON para HTML).
 
 import pytest
-# IMPORT CORRIGIDO: Assume que 'create_app' está no arquivo 'run.py'
-from run import create_app 
+# CORREÇÃO DE IMPORT: Mudamos para 'from app import create_app'
+# O arquivo 'run.py' DEVE ser renomeado para 'app.py' no diretório raiz
+from app import create_app 
 
 # --- Fixture para Configuração do Cliente de Teste ---
 @pytest.fixture
