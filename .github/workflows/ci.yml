@@ -50,7 +50,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to Railway
-        uses: railwayapp/railway-action@v2
+        uses: railwayapp/github-action@v3
         with:
           # Variáveis de ambiente fornecidas pelo Railway
           railwayToken: ${{ secrets.RAILWAY_API_KEY }}
